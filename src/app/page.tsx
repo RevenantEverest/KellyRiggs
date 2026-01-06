@@ -5,6 +5,7 @@ import { Jumbotron, MyPromises, Testimonials } from '@/components/Homepage';
 import { BookList } from '@/components/Books';
 
 import { GEA, Hubblle, PPG, UNFI, Watco } from '@/components/common';
+import RecentPodcastEpisodes from '@/components/RecentPodcastEpisodes';
 
 function Home() {
 
@@ -26,6 +27,7 @@ function Home() {
                 <MyPromises />
                 <Testimonials />
                 <BookList />
+                <RecentPodcastEpisodes />
             </Layout>
         </React.Fragment>
     );

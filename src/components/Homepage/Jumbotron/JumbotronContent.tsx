@@ -7,11 +7,11 @@ function JumbotronContent() {
     return(
         <div className="flex flex-col lg:flex-row gap-0 md:gap-0 items-center justify-center h-screen px-10 lg:px-30 xl:px-56">
             <div className="flex flex-col gap-2 justify-center items-center lg:items-start text-center lg:text-start w-full z-20">
-                <div className="w-7/12 flex flex-col gap-3">
-                    <h1 className="text-7xl font-bold text-accent">Kelly Riggs</h1>
-                    <div className="text-5xl font-semibold text-text w-8/12 mt-4">
+                <div className="w-full lg:w-7/12 flex flex-col gap-3">
+                    <h1 className="text-6xl lg:text-7xl font-bold text-accent">Kelly Riggs</h1>
+                    <div className="text-3xl lg:text-5xl font-bold text-text w-full lg:w-8/12 mt-4">
                         <RotatingText
-                            texts={["Innovative Sales", "Leadership Strategies"]}
+                            texts={["Innovative Sales", "Leadership Strategies", "Podcast Host", "Keynote Speaker", "Author"]}
                             mainClassName={`
                                 px-2 sm:px-2 md:px-3 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg
                                 bg-gradient-to-r from-card-light via-primary to-accent
@@ -26,7 +26,7 @@ function JumbotronContent() {
                             rotationInterval={3000}
                         />
                     </div>
-                    <div className="flex gap-5 text-4xl mt-5 text-muted">
+                    <div className="flex gap-5 text-4xl mt-5 text-muted justify-center lg:justify-start">
                         <MotionHover>
                             <FaLinkedin />
                         </MotionHover>

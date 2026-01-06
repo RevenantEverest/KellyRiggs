@@ -1,3 +1,4 @@
+import { MotionFadeIn } from '@/components/common';
 import TestimonialItem from './TestimonialItem';
 
 interface Testimonial {
@@ -64,12 +65,16 @@ function Testimonials() {
 
     return(
         <div className="flex flex-col items-center justify-center gap-10">
-            <div className="text-center flex flex-col gap-3">
-                <h1 className="text-5xl font-bold">What Do People Say?</h1>
-            </div>
-            <div className="flex gap-20 lg:gap-8 mt-20 lg:gap-y-20 flex-wrap items-center justify-center">
-                {renderTestimonials()}
-            </div>
+            <MotionFadeIn>
+                <div className="text-center flex flex-col gap-3">
+                    <h1 className="text-5xl font-bold">What Do People Say?</h1>
+                </div>
+            </MotionFadeIn>
+            <MotionFadeIn>
+                <div className="flex gap-20 lg:gap-8 mt-20 lg:gap-y-20 flex-wrap items-center justify-center">
+                    {renderTestimonials()}
+                </div>
+            </MotionFadeIn>
         </div>
     );
 };
