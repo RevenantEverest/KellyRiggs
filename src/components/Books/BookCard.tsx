@@ -35,8 +35,8 @@ function BookCard({ item }: BookProps) {
     return(
         <Card>
         <CardContent className="text-text py-5">
-        <div className="flex gap-15 items-center">
-            <div className="flex flex-col justify-center items-center gap-5">
+        <div className="flex flex-col gap-10 lg:flex-row lg:gap-15 items-center">
+            <div className="flex flex-col justify-center items-center gap-5 pt-5 lg:pt-0">
                 <div className="w-60 h-90 flex overflow-hidden">
                     <img
                         className="shrink-0 relative object-cover w-full h-full rounded-lg"
@@ -51,17 +51,17 @@ function BookCard({ item }: BookProps) {
                 </a>
             </div>
             <div className="flex flex-col gap-8">
-                <div>
-                    <h1 className="text-4xl font-bold text-accent">{title}</h1>
-                    <p className="font-semibold text-muted text-2xl">{subtitle}</p>
+                <div className="text-center lg:text-left">
+                    <h1 className="text-2xl lg:text-4xl font-bold text-accent">{title}</h1>
+                    <p className="font-semibold text-muted text-lg lg:text-2xl">{subtitle}</p>
                 </div>
                 <div className="flex flex-col gap-8">
-                    <p className="font-semibold text-lg">{description}</p>
+                    <p className="font-semibold text-md lg:text-lg text-center lg:text-left">{description}</p>
                     <div>
-                        <p className="font-bold text-2xl mb-2">Learn how to:</p>
+                        <p className="font-bold text-2xl mb-2 text-center lg:text-left">Learn how to:</p>
                         {renderTakeAways()}
                     </div>
-                    <p className="font-semibold text-lg">{secondDescription}</p>
+                    <p className="font-semibold text-md lg:text-lg text-center lg:text-left">{secondDescription}</p>
                 </div>
             </div>
         </div>
