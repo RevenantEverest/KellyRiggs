@@ -5,7 +5,7 @@ import { Jumbotron, MyPromises, Testimonials } from '@/components/Homepage';
 import { BookList } from '@/components/Books';
 
 import { GEA, Hubblle, PPG, UNFI, Watco } from '@/components/common';
-import RecentPodcastEpisodes from '@/components/RecentPodcastEpisodes';
+import { RecentPodcastEpisodes } from '@/components/Podcast';
 
 function Home() {
 
