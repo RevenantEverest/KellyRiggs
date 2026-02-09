@@ -44,7 +44,7 @@ function JumbotronContent() {
                         </MotionHover>
                     </div>
                     <Button size="lg" className="text-xl py-7 mt-5">
-                        Get Started!
+                        Book A Call!
                     </Button>
                 </div>
             </div>
