@@ -1,0 +1,28 @@
+import type { Toast, ToastPosition } from 'react-hot-toast';
+
+import { FaCircleCheck } from 'react-icons/fa6';
+import { Card } from '@/components/ui/card';
+
+export interface ToastSuccessProps {
+    toast: Toast,
+    position?: ToastPosition,
+    duration?: number,
+    message: string
+};
+
+function ToastSuccess({ toast, position="top-right", duration=3000, message }: ToastSuccessProps) {
+
+    toast.duration = duration; //eslint-disable-line
+    toast.position = position; //eslint-disable-line
+
+    return(
+        <Card className="bg-card shadow-lg w-full p-4 border-muted/60 border-2">
+            <div className="flex gap-2 w-full items-center">
+                <FaCircleCheck className="text-primary" />
+                <p className="text-text">{message}</p>
+            </div>
+        </Card>
+    );
+};
+
+export default ToastSuccess;

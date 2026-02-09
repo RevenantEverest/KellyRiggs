@@ -5,6 +5,9 @@ export { default as Image } from './Image';
 export { default as Marquee } from './Marquee';
 export { default as YouTubePlayer } from './YouTubePlayer';
 
+export { default as ToastError } from './toasts/ToastError';
+export { default as ToastSuccess } from './toasts/ToastSuccess';
+
 export { default as GEA } from './SVG/GEA';
 export { default as Hubblle } from './SVG/Hubblle';
 export { default as PPG } from './SVG/PPG';
