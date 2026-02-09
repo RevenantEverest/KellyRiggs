@@ -1,9 +1,10 @@
+import { Layout } from '@/components/common';
+
 function About() {
 
     return(
-        <div>
-            
-        </div>
+        <Layout main transparent className="gap-50 mb-40 pt-40">
+        </Layout>
     );
 };
 
